@@ -1,0 +1,24 @@
+class Cliente:
+    def __init__(self, nombre, email, telefono, contraseña):
+        self.nombre = nombre
+        self.email = email
+        self.telefono = telefono
+        self. contraseña = contraseña
+
+    def mostrar_informacion(self):
+        print("Nombre: ", self.nombre)
+        print("Email: ", self.email)
+        print("Teléfono: ", self.telefono)
+        print("Contraseña: ", self.contraseña)
+
+def registrar_cliente():
+    nombre = input("Ingrese el nombre del cliente: ")
+    email = input("Ingrese el email del cliente: ")
+    telefono = input("Ingrese el teléfono del cliente: ")
+    contraseña = input("Ingrese la contraseña")
+
+    cliente = Cliente(nombre, email, telefono, contraseña)
+    return cliente
+
+cliente1 = registrar_cliente()
+cliente1.mostrar_informacion()
